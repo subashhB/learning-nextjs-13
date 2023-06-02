@@ -1,7 +1,8 @@
+import Nav from '@components/Nav';
 import '@styles/globals.css';
 
-const metadata = {
-    title: "ProptHub",
+export const metadata = {
+    title: "PromptJunction",
     description: "Discover & Share AI Prompts"
 }
 
@@ -12,6 +13,7 @@ const RootLayout = ({ children }) => {
             <div className='gradient'/>
         </div>
         <main className='app'>
+          <Nav/>
             { children }
         </main>
     </html>
