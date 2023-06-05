@@ -1,5 +1,6 @@
 import "@styles/globals.css";
-import Nav from '@components/Nav';
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 
 export const metadata = {
   titile: "PromptJunction",
@@ -10,12 +11,16 @@ const RootLayout = ({ children }) => {
   return (
     <html>
       <body>
-        <div className="main">
-          <div className="gradient" />
-        </div><main className="app">
-          <Nav/>
-            { children }
-        </main>
+        {/* Wrapping the Provider in the Body so that whole application can utilize the ssession */}
+        <Provider>
+          <div className="main">
+            <div className="gradient" />
+          </div>
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   );
