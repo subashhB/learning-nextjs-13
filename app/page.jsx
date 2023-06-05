@@ -1,4 +1,4 @@
-import Feed from "@components/Feed"
+import Feed from "@components/Feed";
 
 const Home = () => {
   return (
@@ -6,12 +6,12 @@ const Home = () => {
       <h1 className="head_text text-center">
         Discover & Share
         <br className="max-md:hidden" />
-        <span className="orange_gradient"> AI Powered Prompts</span>
+        <span className="orange_gradient text-center"> AI-Powered Prompts</span>
       </h1>
-      <p>PromptJunction is an open-source AT prompting tool for modern world to discover, create and share creative prompts.</p>
+      <p className="desc text-center">PromptJunction is an open-source AT prompting tool for modern world to discover, create and share creative prompts.</p>
       <Feed/>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

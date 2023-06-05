@@ -1,23 +1,24 @@
+import "@styles/globals.css";
 import Nav from '@components/Nav';
-import '@styles/globals.css';
 
 export const metadata = {
-    title: "PromptJunction",
-    description: "Discover & Share AI Prompts"
-}
+  titile: "PromptJunction",
+  description: "Discover & Share AI prompts",
+};
 
 const RootLayout = ({ children }) => {
   return (
     <html>
-        <div className='main'>
-            <div className='gradient'/>
-        </div>
-        <main className='app'>
+      <body>
+        <div className="main">
+          <div className="gradient" />
+        </div><main className="app">
           <Nav/>
             { children }
         </main>
+      </body>
     </html>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;
