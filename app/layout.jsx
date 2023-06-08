@@ -3,7 +3,7 @@ import Nav from "@components/Nav";
 import Provider from "@components/Provider";
 
 export const metadata = {
-  titile: "PromptJunction",
+  title: "PromptJunction",
   description: "Discover & Share AI prompts",
 };
 
